@@ -41,9 +41,11 @@ class App extends Component {
             <img src={logo} className="App-logo-1 justify-start" alt="logo" />
             <img src={logo2} className="App-logo-2" alt="logo" />
           </div>
-          {
-            this.state.monsters.map(monster => <h1 key={monster.id}>{monster.name} </h1>)
-          }
+          <div className="monster-names">
+            {
+              this.state.monsters.map(monster => <h1 key={monster.id}>{monster.name} </h1>)
+            }
+          </div>
           <h3>{this.state.something}</h3>
           <br />
 
